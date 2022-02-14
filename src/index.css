@@ -1,0 +1,72 @@
+@import "./theme.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-none {
+  display: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: var(--light-gray-gradient-color-500);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 62px;
+}
+
+.heading {
+  font-family: var(--primary-font-family);
+  font-size: var(--font-size-lg);
+  letter-spacing: -1px;
+  background-image: var(--primary-gradient-color-500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 17px;
+}
+
+.divisor {
+  width: 205px;
+  color: var(--light-gray-color-500);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.led-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  padding-bottom: 31px;
+}
+
+@media (min-width: 366px) {
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+
+  .divisor {
+    width: 255px;
+  }
+}

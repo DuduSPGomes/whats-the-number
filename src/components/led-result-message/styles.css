@@ -1,0 +1,19 @@
+.led-result-message {
+  font-family: "Montserrat Bold";
+  font-size: var(--font-size-md);
+  letter-spacing: -1px;
+  color: var(--primary-color-500);
+}
+
+.smaller {
+  color: var(--primary-color-500);
+}
+.large {
+  color: var(--primary-color-500);
+}
+.success {
+  color: var(--success-color-500);
+}
+.error {
+  color: var(--error-color-500);
+}

@@ -1,0 +1,26 @@
+.input {
+  width: 217px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: var(--light-gray-color-500);
+  border-radius: 4px;
+  font-size: var(--font-size-xs);
+  font-family: "Roboto Regular";
+  color: var(--dark-gray-color-600);
+  text-indent: 12px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--primary-color-500);
+}
+
+.input::placeholder {
+  color: var(--light-gray-color-900);
+}
+
+.input:disabled {
+  border-color: var(--light-gray-color-500);
+  background: var(--light-gray-color-100);
+}

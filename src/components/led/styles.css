@@ -1,0 +1,449 @@
+.led {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 56px;
+}
+
+.led:not(:first-child) {
+  margin-left: 10px;
+}
+
+.led-box {
+  width: 55px;
+  height: 55px;
+  border-left: 11px solid;
+  border-right: 11px solid;
+  border-color: var(--light-gray-color-400);
+  border-radius: 4px;
+  position: relative;
+}
+
+.led-box.top {
+  border-top: 11px solid;
+  border-bottom: 5.5px solid;
+  border-color: var(--light-gray-color-400);
+}
+
+.led-box.bottom {
+  border-top: 5.5px solid;
+  border-bottom: 11px solid;
+  border-color: var(--light-gray-color-400);
+}
+
+.corner {
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 18px;
+}
+
+.corner.top {
+  top: -12.5px;
+}
+
+.corner.top.left {
+  left: -4.6px;
+  transform: rotate(135deg);
+}
+
+.corner.top.right {
+  right: -4.6px;
+  transform: rotate(45deg);
+}
+
+.corner.middle {
+  height: 11px;
+}
+
+.corner.middle.bottom {
+  bottom: -8px;
+}
+
+.corner.middle.bottom.left {
+  left: -5px;
+  transform: rotate(55deg);
+}
+
+.corner.middle.bottom.right {
+  right: -5px;
+  transform: rotate(125deg);
+}
+
+.corner.middle.top {
+  top: -8px;
+}
+
+.corner.middle.top.left {
+  left: -5px;
+  transform: rotate(125deg);
+}
+
+.corner.middle.top.right {
+  right: -5px;
+  transform: rotate(55deg);
+}
+
+.corner.bottom {
+  bottom: -12.5px;
+}
+
+.corner.bottom.left {
+  left: -4.6px;
+  transform: rotate(45deg);
+}
+
+.corner.bottom.right {
+  right: -4.6px;
+  transform: rotate(135deg);
+}
+
+._1.led-standard-color {
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._2.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._2.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._3.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._3.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._4.led-standard-color {
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._4.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._5.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._5.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._6.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._6.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._7.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._7.led-standard-color {
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._8.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._8.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._9.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 5.5px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._9.led-standard-color {
+  border-top: 5.5px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.top._0.led-standard-color {
+  border-top: 11px solid var(--dark-gray-color-500) !important;
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+}
+
+.led-box.bottom._0.led-standard-color {
+  border-right: 11px solid var(--dark-gray-color-500) !important;
+  border-left: 11px solid var(--dark-gray-color-500) !important;
+  border-bottom: 11px solid var(--dark-gray-color-500) !important;
+}
+
+/* SUCCESS BORDER COLORS */
+
+._1.led-success-color {
+  border-right: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._2.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._2.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._3.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._3.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._4.led-success-color {
+  border-left: 11px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._4.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._5.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._5.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._6.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._6.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._7.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._7.led-success-color {
+  border-right: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._8.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._8.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._9.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 5.5px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._9.led-success-color {
+  border-top: 5.5px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.top._0.led-success-color {
+  border-top: 11px solid var(--success-color-500) !important;
+  border-right: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+}
+
+.led-box.bottom._0.led-success-color {
+  border-right: 11px solid var(--success-color-500) !important;
+  border-left: 11px solid var(--success-color-500) !important;
+  border-bottom: 11px solid var(--success-color-500) !important;
+}
+
+/* ERROR BORDER COLORS */
+
+._1.led-error-color {
+  border-right: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._2.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._2.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._3.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._3.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._4.led-error-color {
+  border-left: 11px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._4.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._5.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._5.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._6.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._6.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._7.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._7.led-error-color {
+  border-right: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._8.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._8.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._9.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 5.5px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._9.led-error-color {
+  border-top: 5.5px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.top._0.led-error-color {
+  border-top: 11px solid var(--error-color-500) !important;
+  border-right: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+}
+
+.led-box.bottom._0.led-error-color {
+  border-right: 11px solid var(--error-color-500) !important;
+  border-left: 11px solid var(--error-color-500) !important;
+  border-bottom: 11px solid var(--error-color-500) !important;
+}
+
+@media (min-width: 366px) {
+  .led-box {
+    width: 75px;
+    height: 75px;
+  }
+}
