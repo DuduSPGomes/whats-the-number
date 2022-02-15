@@ -6,6 +6,11 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
+  output: {
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
@@ -13,13 +18,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Qual é o número?",
+      hash: true,
+      filename: "./index.html",
+      template: "./src/index.html",
     }),
   ],
-  output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
-    clean: true,
-  },
   module: {
     rules: [
       {
