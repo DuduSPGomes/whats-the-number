@@ -9,6 +9,8 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "http://localhost:8080/", // Development Server
+    // publicPath: "http://example.com/", // Production Server
     clean: true,
   },
   devtool: "inline-source-map",
@@ -18,9 +20,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Qual é o número?",
-      hash: true,
-      filename: "./index.html",
-      template: "./src/index.html",
     }),
   ],
   module: {
@@ -32,10 +31,16 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "assets/images/[hash][ext][query]",
+        },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.woff(2)(\?[0-9a-z\-=]+)?$/,
         type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[hash][ext][query]",
+        },
       },
     ],
   },
