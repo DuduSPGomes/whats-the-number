@@ -9,8 +9,7 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "http://localhost:8080/", // Development Server
-    // publicPath: "http://example.com/", // Production Server
+    publicPath: "http://localhost:8080/",
     clean: true,
   },
   devtool: "inline-source-map",
