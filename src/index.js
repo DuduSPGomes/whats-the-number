@@ -1,4 +1,4 @@
-import Page from "../src/pages/page.js";
+import Page from "../src/pages";
 import "../src/index.css";
 
 document.querySelector("body").innerHTML = Page();
